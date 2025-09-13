@@ -130,7 +130,7 @@
   &trans         &trans         &trans         &trans         &trans         &trans                        &trans         &trans         &trans         &trans         &trans         &trans          
 //___________________________________________________________________________________________              ___________________________________________________________________________________________
 //|              |      1       |      2       |      3       |      4       |      5       |              |      6       |      7       |      8       |      9       |      0       |              |
-  &trans         HRML(&kp KP_N1, &kp KP_N2,    &kp KP_N3,     &kp KP_N4)     &kp KP_N5                     &kp KP_N6      HRMR(&kp KP_N1, &kp KP_N2,    &kp KP_N3,     &kp KP_N4)     &trans         
+  &trans         HRML(KP_N1,    KP_N2,         KP_N3,         KP_N4)         &kp KP_N5                     &kp KP_N6      HRMR(KP_N1,    KP_N2,         KP_N3,         KP_N4)         &trans         
 //___________________________________________________________________________________________              ___________________________________________________________________________________________
 //|              |      {       |      "       |      ;       |      }       |       @      |              |      |       |      \       |              |              |              |              |
   &trans         &trans         &trans         &trans         &trans         &trans                        &trans         &trans         &trans         &trans         &trans         &trans          
