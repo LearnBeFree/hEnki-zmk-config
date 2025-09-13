@@ -97,7 +97,7 @@
         //│ CAPSWORD │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │  \       │
            &caps_word   &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH &caps_word
         //╰──────────╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯──────────╯
-                                         &tt NUM TAB &tt SYM SPACE &tt NAV RET  &tt NAV BSPC &tt SYM SPACE &tt NUM TAB
+                                           &tt 2 TAB &tt 1 SPACE &tt 3 RET      &tt 3 BSPC &tt 1 SPACE &tt 2 TAB
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
