@@ -114,7 +114,7 @@
   &kp ESC        &kp RA(A)      &kp RA(S)      &kp RA(D)      &kp RA(F)      &kp RA(G)                     &kp RA(H)      &kp RA(J)      &kp RA(K)      &kp RA(L)      &kp RA(SEMI)   &kp SQT
 //___________________________________________________________________________________________              ___________________________________________________________________________________________
 //|              |      {       |      "       |      ;       |      }       |       @      |              |      |       |      \       |              |              |              |              |
-  &note          &kp RA(Z)      &kp RA(X)      &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  &kp RA(DOT)    &kp RA(FSLH)   &note   
+  &none          &kp RA(Z)      &kp RA(X)      &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  &kp RA(DOT)    &kp RA(FSLH)   &none   
 //                                             ______________________________________________              ______________________________________________
 //                                             |              |              |              |              |              |              |              |
 											   &trans         &kp LANG1      &trans                        &kp BSPC       &kp LANG2      &trans         
