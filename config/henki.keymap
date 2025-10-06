@@ -1,5 +1,5 @@
 // Copyright (c) 2022 The ZMK Contributors
-// Keyboard layout designed to work with my custom Russian and English layout
+// Keyboard layout designed to work with my custom Russian and English layouts
 // SPDX-License-Identifier: MIT
 
 #include <behaviors.dtsi>
@@ -28,6 +28,16 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
     continue-list = <UNDERSCORE MINUS SLASH SEMI LBKT SQT>;
 	mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
 };
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+    combo_##NAME { \
+        timeout-ms = <50>; \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+    };
+
+
 
 / {
     behaviors {
@@ -68,6 +78,12 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
         //╰──────╰──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────╯──────╯
         //                     |  36  |  37  |  38  |   |  39  |  40  |  41  |
         //                     ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
+
+	combos {
+        compatible = "zmk,combos";
+        COMBO(soft,         &kp LS(W),         2 3,        0)
+        COMBO(iii,          &kp LS(O),         8 9,        0)
+    };
 
     keymap {
         compatible = "zmk,keymap";
