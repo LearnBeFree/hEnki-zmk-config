@@ -81,7 +81,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 	combos {
         compatible = "zmk,combos";
-        COMBO(soft,         &kp LS(W),         2 3,        0)
+        COMBO(hard,         &kp LS(W),         2 3,        0)
         COMBO(iii,          &kp LS(O),         8 9,        0)
     };
 
