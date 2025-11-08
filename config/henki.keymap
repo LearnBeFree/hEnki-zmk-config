@@ -22,12 +22,19 @@ MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 #define BRML(k1,k2) &hml LGUI k1  &hml LALT k2
-#define BRMR(k1,k2) &hmr RALT k3  &hmr RGUI k4
+#define BRMR(k1,k2) &hmr RALT k1  &hmr RGUI k2
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS SLASH SEMI LBKT SQT>;
 	mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
 };
+
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
     combo_##NAME { \
