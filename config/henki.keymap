@@ -29,12 +29,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 	mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
 };
 
-&kp {
-    release-after-ms = <1000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
     combo_##NAME { \
