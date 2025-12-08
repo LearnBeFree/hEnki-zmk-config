@@ -29,7 +29,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 	mods = <(MOD_LSFT | MOD_LALT | MOD_RSFT | MOD_RALT)>;
 };
 
-&sk {
+&kp {
     release-after-ms = <1000>;
     quick-release;
     /delete-property/ ignore-modifiers;
@@ -107,7 +107,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
             &kp ESC     &kp A     &kp S     &kp D     &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
         //├──────────├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
         //│ SHIFT    │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │  SHIFT   │
-           &sk LSHFT    BRML(Z,      X)      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  BRMR(DOT,    FSLH)  &sk RSHFT
+           &kp LSHFT    BRML(Z,      X)      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  BRMR(DOT,    FSLH)  &kp RSHFT
         //╰──────────╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                            &mt LCTRL TAB &tt 1 SPACE &tt 3 RET  &tt 2 BSPC &tt 1 SPACE &mt RCTRL TAB
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -126,7 +126,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   &kp ESC        &kp RA(A)      &kp RA(S)      &kp RA(D)      &kp RA(F)      &kp RA(G)                     &kp RA(H)      &kp RA(J)      &kp RA(K)      &kp RA(L)      &kp RA(SEMI)   &kp RA(SQT)
 //___________________________________________________________________________________________              ___________________________________________________________________________________________
 //|              |      {       |      "       |      ;       |      }       |       @      |              |      |       |      \       |              |              |              |              |
-  &sk LSHFT     BRML(RA(Z),      RA(X))        &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  BRMR(RA(DOT),    RA(FSLH))    &sk RSHFT   
+  &kp LSHFT     BRML(RA(Z),      RA(X))        &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  BRMR(RA(DOT),    RA(FSLH))    &kp RSHFT   
 //                                             ______________________________________________              ______________________________________________
 //                                             |              |              |              |              |              |              |              |
 											   &mt LCTRL LANG1      &kp SPACE      &kp RET                        &kp BSPC    &kp SPACE      &mt RCTRL LANG2         
@@ -145,7 +145,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   &trans         &kp N1    &kp N2         &kp N3         &kp N4         &kp N5                             &kp N6      &kp N7    &kp N8         &kp N9         &kp N0         &kp RA(SQT)         
 //___________________________________________________________________________________________              ___________________________________________________________________________________________
 //|              |      {       |      "       |      ;       |      }       |       @      |              |      |       |      \       |              |              |              |              |
-  &sk LSHFT     BRML(RA(Z),      RA(X))        &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  BRMR(RA(DOT),    RA(FSLH))    &sk RSHFT   
+  &kp LSHFT     BRML(RA(Z),      RA(X))        &kp RA(C)      &kp RA(V)      &kp RA(B)                     &kp RA(N)      &kp RA(M)      &kp RA(COMMA)  BRMR(RA(DOT),    RA(FSLH))    &kp RSHFT   
 //                                             ______________________________________________              ______________________________________________
 //                                             |              |              |              |              |              |              |              |
 											   &kp LCTRL       &kp SPACE      &kp RET                        &kp BSPC    &kp SPACE      &kp RCTRL          
