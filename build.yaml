@@ -15,6 +15,6 @@
 include:
   - board: nice_nano@2.0.0
     shield: henki_left
-  - board: nice_nano_@2.0.0
+  - board: nice_nano@2.0.0
     shield: henki_right
 
